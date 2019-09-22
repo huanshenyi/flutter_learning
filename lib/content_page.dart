@@ -1,3 +1,5 @@
+import 'package:beauty_flutter/card_%20ranking.dart';
+import 'package:beauty_flutter/card_top.dart';
 import 'package:beauty_flutter/custom_appbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -45,20 +47,19 @@ class _ContentPagerState extends State<ContentPager> {
           onPageChanged: widget.onPageChanged,
           controller: _pageController,
           children: <Widget>[
-             _wrapItem(0),
-             _wrapItem(1),
-             _wrapItem(2),
-             _wrapItem(3),
+             _wrapItem(CardTop()),
+             _wrapItem(CardRanking()),
+             _wrapItem(CardTop()),
+             _wrapItem(CardTop()),
           ],
         ))
       ],
     );
   }
-  Widget _wrapItem(int index){
+  Widget _wrapItem(Widget widget){
     // Padding余白
     return Padding(padding: EdgeInsets.all(10),
-     child: Container(decoration: BoxDecoration(color: _colors[index]),
-     ),
+     child:widget,
     );
   }
   //ステータスバーの中毒状態

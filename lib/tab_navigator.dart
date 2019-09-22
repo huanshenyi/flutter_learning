@@ -54,10 +54,10 @@ class _TabNavigatorState extends State<TabNavigator> {
             },
             type: BottomNavigationBarType.fixed,
             items: [
-          _bottomItem("人気", Icons.whatshot,0),
-          _bottomItem("無料", Icons.sentiment_very_satisfied,1),
-          _bottomItem("セール", Icons.shopping_basket,2),
-          _bottomItem("ホーム", Icons.home,3),
+          _bottomItem("トップ", Icons.whatshot,0),
+          _bottomItem("ランキング", Icons.grade,1),
+          _bottomItem("無料", Icons.sentiment_very_satisfied,2),
+          _bottomItem("セール", Icons.shopping_basket,3),
         ]),
     );
   }
