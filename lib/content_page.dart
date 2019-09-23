@@ -1,4 +1,6 @@
+import 'package:beauty_flutter/card_%20free.dart';
 import 'package:beauty_flutter/card_%20ranking.dart';
+import 'package:beauty_flutter/card_sale.dart';
 import 'package:beauty_flutter/card_top.dart';
 import 'package:beauty_flutter/custom_appbar.dart';
 import 'package:flutter/material.dart';
@@ -49,8 +51,8 @@ class _ContentPagerState extends State<ContentPager> {
           children: <Widget>[
              _wrapItem(CardTop()),
              _wrapItem(CardRanking()),
-             _wrapItem(CardTop()),
-             _wrapItem(CardTop()),
+             _wrapItem(CardFree()),
+             _wrapItem(CardSale()),
           ],
         ))
       ],

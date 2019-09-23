@@ -71,7 +71,11 @@ class BaseCoredState extends State<BaseCored> {
   }
 
   bottomTitle(String title) {
-    return Text(title, style: TextStyle(fontSize: 12,color:bottomTitleColor),);
+    return Text(
+      title,
+      textAlign: TextAlign.center,
+      style: TextStyle(fontSize: 12,color:bottomTitleColor),
+    );
   }
 }
 
